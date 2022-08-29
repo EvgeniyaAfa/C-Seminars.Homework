@@ -30,46 +30,44 @@ int randnumber = new Random().Next(100,1000);
 int numbervtoroe = FindTwoDiger(randnumber);
 Console.WriteLine($"Number two of {randnumber} is {numbervtoroe}");*/
 
-/* Домашка. Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, 
-что третьей цифры нет.
+// Домашка. Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, 
+//что третьей цифры нет.
 //356 -> 6 356 % 10
 int TheThirdNumber (int number)
 {
     int ed = number % 10;
     int numberthree = ed;
-    if (number > 99)
+    if (number > 99 )
      Console.Write($"Third digit is {numberthree}");
+      
     else 
       Console.Write($"Theres no third digit. Input anothere number");
       return numberthree;
-}
+      
+}    
 Console.Write("Input number  :  ");
 int n = Convert.ToInt32(Console.ReadLine());
-int numbertri = TheThirdNumber(n);*/
+int numbertri = TheThirdNumber(n);
 
 /*Домашка.Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
 и проверяет, является ли этот день выходным.
 6 -> да
 7 -> да
 1 -> нет*/
-void Weekendornot (int number)
+/*void Weekendornot (int number)
 {
-    if (number == 6)
-    {
-      Console.Write("It's weekend");
-    }
-
-    if (number == 7)
-    {
-      Console.Write("It's weekend");
-    }
+    if (number == 6) Console.Write("It's weekend");
+    if (number == 7) Console.Write("It's weekend");
     
-     else
-    {
-      Console.Write("It isn't weekend");
-    }
-        
+    if (number == 1) Console.Write("It isn't weekend");
+    if (number == 2) Console.Write("It isn't weekend");
+    if (number == 3) Console.Write("It isn't weekend");    
+    if (number == 4) Console.Write("It isn't weekend");
+    if (number == 5) Console.Write("It isn't weekend");
+    if (number <= 0 || number > 7) Console.Write("Input correct information");
 }
+
 Console.Write("Input number  :  ");
 int n = Convert.ToInt32(Console.ReadLine());
 Weekendornot(n);
+*/
