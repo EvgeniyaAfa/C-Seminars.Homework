@@ -293,61 +293,61 @@
 
 //Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
-int[,] CreateRan2dArray(int rows, int columns, int minval, int maxval)
-{  
-    int[,] newArray = new int[rows, columns];
+// int[,] CreateRan2dArray(int rows, int columns, int minval, int maxval)
+// {  
+//     int[,] newArray = new int[rows, columns];
 
-    for (int i = 0; i < rows; i++)
-        for (int j = 0; j < columns; j++)
+//     for (int i = 0; i < rows; i++)
+//         for (int j = 0; j < columns; j++)
         
-            newArray[i,j] = new Random().Next(minval, maxval + 1);     
+//             newArray[i,j] = new Random().Next(minval, maxval + 1);     
            
-      return newArray;  
-}
+//       return newArray;  
+// }
 
-void Show2dArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for(int j = 0; j < array.GetLength(1); j++)
-            Console.Write(array[i,j] + " ");
+// void Show2dArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//             Console.Write(array[i,j] + " ");
         
-        Console.WriteLine();
-    }
+//         Console.WriteLine();
+//     }
 
-    Console.WriteLine();
-}
+//     Console.WriteLine();
+// }
 
-int FindAverage (int[,] array)
-{   int sum = 0;
-    int avr = 0;
-    int count = 0;
+// int FindAverage (int[,] array)
+// {   int sum = 0;
+//     int avr = 0;
+    
 
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for(int j = 0; j < array.GetLength(1); j++)
-        {   
-            sum = array[j,i] + sum;
-            if (count < array.GetLength(1)) count +=1;
-            avr = sum / count;
-        }    
-    Console.WriteLine();          
-    }
-    return avr;
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < array.GetLength(1); j++)
+//         {   
+//             sum += array[j, i];
+            
+//         }   
+//      avr = sum / array.GetLength(0);
+//     Console.WriteLine();          
+//     }
+//     return avr;
 
-}
-Console.Write("Input rows number: ");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input columns number: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input min number: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input max number: ");
-int max = Convert.ToInt32(Console.ReadLine());
+// }
+// Console.Write("Input rows number: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input columns number: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input min number: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Input max number: ");
+// int max = Convert.ToInt32(Console.ReadLine());
 
 
-int[,] myarray = CreateRan2dArray(m, n, min, max);
-Show2dArray(myarray);
-Console.WriteLine($"{FindAverage(myarray)}");
+// int[,] myarray = CreateRan2dArray(m, n, min, max);
+// Show2dArray(myarray);
+// Console.WriteLine($"{FindAverage(myarray)}");
 
 

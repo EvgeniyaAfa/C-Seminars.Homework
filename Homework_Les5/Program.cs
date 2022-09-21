@@ -112,7 +112,7 @@ ShowArray(Swap(myArray));
 //Задача 3. Задайте массив. Напишите программу, которая определяет, 
 //присутствует ли заданное число в массиве.
 
-/*int [] CreateRandomArray (int size,int minValue, int maxValue)
+int [] CreateRandomArray (int size,int minValue, int maxValue)
 {
     int [] newarray = new int[size]; 
     
@@ -145,11 +145,11 @@ bool RanNumber(int [] array, int rannumber)
 }
 
 Console.Write("Input your number:  ");
-  int rannumber = Convert.ToInt32(Console.ReadLine());
+int rannumber = Convert.ToInt32(Console.ReadLine());
 int [] myArray = CreateRandomArray(10, -10, 10);
 ShowArray(myArray);
-Console.WriteLine($"{RanNumber(myArray)}");
-**/
+Console.WriteLine($"{RanNumber(myArray, rannumber)}");
+
 
 //Задайте одномерный массив из 12 случайных чисел. 
 //Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
@@ -275,72 +275,72 @@ Console.WriteLine($" Sum of odd elements is {OddNum(newArray)}");
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между 
 //максимальным и минимальным элементов массива.
 
-/*int [] CreateRandomArray (int size,int minValue, int maxValue)
-{
-    int [] newarray = new int[size]; 
+// int [] CreateRandomArray (int size,int minValue, int maxValue)
+// {
+//     int [] newarray = new int[size]; 
     
-    for (int i=0; i < size; i ++)
-       newarray[i] = new Random().Next(minValue,maxValue + 1);
+//     for (int i=0; i < size; i ++)
+//        newarray[i] = new Random().Next(minValue,maxValue + 1);
 
-    return newarray;
-}
+//     return newarray;
+// }
 
-double [] CreateRandomDoubleArray (int size,double minValue, double maxValue)
-{
-    double [] newarray = new double[size]; 
+// double [] CreateRandomDoubleArray (int size,double minValue, double maxValue)
+// {
+//     double [] newarray = new double[size]; 
     
-    for (int i=0; i < size; i ++)
-       newarray[i] = new Random().NextDouble() ;
+//     for (int i=0; i < size; i ++)
+//        newarray[i] = new Random().NextDouble() ;
 
-    return newarray;
-}
+//     return newarray;
+// }
 
-void ShowArrayD (double [] Array)
+// void ShowArrayD (double [] Array)
 
-{
-    for (int i = 0; i < Array.Length; i++)
-    Console.Write(Array[i] + " ");
-
-
-Console.WriteLine();
-
-}   
-void ShowArray (int [] Array)
-
-{
-    for (int i = 0; i < Array.Length; i++)
-    Console.Write(Array[i] + " ");
+// {
+//     for (int i = 0; i < Array.Length; i++)
+//     Console.Write(Array[i] + " ");
 
 
-Console.WriteLine();
+// Console.WriteLine();
 
-}   
+// }   
+// void ShowArray (int [] Array)
+
+// {
+//     for (int i = 0; i < Array.Length; i++)
+//     Console.Write(Array[i] + " ");
 
 
-int Find  (int [] array)
+// Console.WriteLine();
 
-{ 
-  int result = 0;
-  int posmin = 0;
-  int posmax = 0;
-  for (int i = 0; i < array.Length; i++)
-  {
-    {
-      if (array[i] < array[posmin]) posmin = array [i];
-    }
+// }   
 
-    if (array[i] > array[posmax]) posmax = array [i];
+
+// int Find  (int [] array)
+
+// { 
+//   int result = 0;
+//   int posmin = 0;
+//   int posmax = 0;
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     {
+//       if (array[i] < array[posmin]) posmin = i;
+//     }
+
+//     if (array[i] > array[posmax]) posmax = i;
   
-  }
-   result = posmax - posmin;
-   return result;
-}
+//   }
+//    result = array [posmax] - array [posmin];
+//    return result;
+// }
 
-int [] myarray = CreateRandomArray(10, -20, 50);
-double [] mydoublearray = CreateRandomDoubleArray (10, 0, 1);
-ShowArray(myarray);
-ShowArrayD(mydoublearray);
-Console.WriteLine($" deference is {Find}");
-*/
+// int [] myarray = CreateRandomArray(10, -20, 50);
+// double [] mydoublearray = CreateRandomDoubleArray (10, 0, 1);
+// ShowArray(myarray);
+// ShowArrayD(mydoublearray);
+// Console.WriteLine($" deference is {Find}");
+
 
 

@@ -98,15 +98,18 @@ Console.Write($"Distaanse is {dist}");
 
      if (chislo5 == chislo1 && edchislo4 == edchislo2)
      {
-      Console.Write("Number is palindrom");
+           Console.Write("Number is palindrom");
      }
-     else 
-      Console.Write("Number isn't palindrom");        
+           else 
+     {
+           Console.Write("Number isn't palindrom");  
+     }      
+
 }
 Console.WriteLine("Input number:  ");
 int num = Convert.ToInt32(Console.ReadLine());
 PalindromorNot(num);
-*/
+
 
 //Задача 21 Напишите программу, которая принимает на вход координаты двух точек 
 //и находит расстояние между ними в 3D пространстве.
